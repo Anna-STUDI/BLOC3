@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <img src="https://logo-marque.com/wp-content/uploads/2022/04/Mercadona-Logo-650x366.png" alt="Logo Mercadono">
+    </div>
+
+
+    <div class="row">
+      <div class="p-3 mb-2 bg-success">
+        <form>
+          <div class="form-group">
+            <label for="identifiant" class="text-white">Identifiant</label>
+            <input type="text" class="form-control" id="identifiant">
+          </div>
+
+          <p class="text-white text-right small text-end">Mot de passe oublié ? Contactez webmaster@mercadona.com.</p>
+
+          <div class="mb-3">
+            <label for="password" class="text-white">Mot de passe</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-white" for="exampleCheck1">Se rappeler de moi</label>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-light text-primary">Connexion</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
