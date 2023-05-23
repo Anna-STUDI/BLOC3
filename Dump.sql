@@ -7,6 +7,10 @@ CREATE TABLE IF NOT EXISTS public.admin
     id_admin bigint NOT NULL,
     name "char" NOT NULL,
     fname "char" NOT NULL,
+    email "char" NOT NULL,
+    username "char" NOT NULL,
+    password "char" NOT NULL,
+    "boolean" boolean NOT NULL,
     CONSTRAINT admin_pkey PRIMARY KEY (id_admin)
 )
 
@@ -41,7 +45,6 @@ CREATE TABLE IF NOT EXISTS public.product
 (
     id_product bigint NOT NULL,
     name_product "char" NOT NULL,
-    mark "char" NOT NULL,
     firstprice double precision NOT NULL,
     description text COLLATE pg_catalog."default" NOT NULL,
     image "char" NOT NULL,
@@ -56,4 +59,22 @@ CREATE TABLE IF NOT EXISTS public.product
 TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.product
+    OWNER to postgres;
+
+
+-- Table: public.product_effect
+
+-- DROP TABLE IF EXISTS public.product_effect;
+
+CREATE TABLE IF NOT EXISTS public.product_effect
+(
+    id_product_effect "char" NOT NULL,
+    startdate_product_effect date NOT NULL,
+    enddate_product_effect date NOT NULL,
+    CONSTRAINT product_effect_pkey PRIMARY KEY (id_product_effect)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.product_effect
     OWNER to postgres;
